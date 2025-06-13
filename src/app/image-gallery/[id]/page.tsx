@@ -4,17 +4,18 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const page = async (
-  props: {
-    params: Promise<{
-      id: string;
-    }>;
-  }
-) => {
-  const params = await props.params;
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
+const Page = async (props: {
+  params: {
+    id: string;
+  };
+}) => {
+  const { id } = props.params;
   const query = gql`
   query MyQuery {
-  imageGallery(where: {id: "${params.id}"}) {
+  imageGallery(where: {id: "${id}"}) {
     heading
     banner {
       url
@@ -25,7 +26,6 @@ const page = async (
   }
 }
   `;
-  const response = await server_query_function(query);
   const { imageGallery } = (await server_query_function(query)) as {
     imageGallery: {
       heading: string;
@@ -37,8 +37,6 @@ const page = async (
       }>;
     };
   };
-
-  console.log(response);
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="bg-white rounded-lg  overflow-hidden">
@@ -80,4 +78,4 @@ const page = async (
   );
 };
 
-export default page;
+export default Page;

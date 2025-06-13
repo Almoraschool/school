@@ -5,7 +5,7 @@ import Video from "@/components/video";
 import { server_query_function } from "@/lib/graphql";
 import React from "react";
 
-const page = async () => {
+const Page = async () => {
   const query = `
 query MyQuery {
   messages {
@@ -24,23 +24,24 @@ query MyQuery {
 }
 `;
 
-  const response = (await server_query_function(query)) as {
-    messages: [
-      {
-        messages: {
-          whoseMessage: string;
-          quote: string;
-          authorName: string;
-          message: {
-            html: string;
-          };
-          image: {
-            url: string;
-          };
-        }[];
-      }
-    ];
-  };
+ interface MessageResponse {
+    messages: [{
+      messages: {
+        whoseMessage: string;
+        quote: string;
+        authorName: string;
+        message: {
+          html: string;
+        };
+        image: {
+          url: string;
+        };
+      }[];
+    }];
+  }
+
+  const response = await server_query_function(query) as MessageResponse;
+
 
   return (
     <>
@@ -56,4 +57,4 @@ query MyQuery {
   );
 };
 
-export default page;
+export default Page;

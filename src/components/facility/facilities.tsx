@@ -67,47 +67,76 @@ const facilitiesData = [
 
 const Facilities = () => {
   return (
-    <section className="p-5 lg:p-10">
-      {facilitiesData.map((facility, index) => (
-        <div
-          key={index}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-10"
-        >
-          <div className={`${index % 2 === 0 ? "order-1" : "lg:order-2"}`}>
-            <Image
-              src={facility.images[0]}
-              alt={facility.title}
-              width={600}
-              height={300}
-              className=" h-[300px] w-full object-cover"
-            />
-            <div className="grid grid-cols-2">
-              <Image
-                src={facility.images[1]}
-                alt={facility.title}
-                width={300}
-                height={300}
-                className="object-cover w-full"
-              />
-              <Image
-                src={facility.images[2]}
-                alt={facility.title}
-                width={300}
-                height={300}
-                className=" w-full  object-cover"
-              />
+    <section className="py-12 px-5 lg:px-16 bg-slate-50">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#3B2565] relative inline-block">
+            Our School Facilities
+            <span className="block h-1 w-24 bg-[#DB2F2F] mx-auto mt-3"></span>
+          </h1>
+          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+            Explore the modern facilities we offer to enhance the learning
+            experience of our students
+          </p>
+        </div>
+
+        {facilitiesData.map((facility, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-xl shadow-lg overflow-hidden mb-16 transition-transform hover:scale-[1.01]"
+          >
+            <div
+              className={`grid grid-cols-1 lg:grid-cols-2 gap-8 ${
+                index % 2 === 0 ? "" : "lg:flex-row-reverse"
+              }`}
+            >
+              <div className={`${index % 2 === 0 ? "order-1" : "lg:order-2"}`}>
+                <div className="relative h-[350px] overflow-hidden">
+                  <Image
+                    src={facility.images[0]}
+                    alt={facility.title}
+                    width={700}
+                    height={400}
+                    className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
+                  />
+                </div>
+                <div className="grid grid-cols-2 gap-2 mt-2">
+                  <div className="overflow-hidden rounded-md">
+                    <Image
+                      src={facility.images[1]}
+                      alt={`${facility.title} view 2`}
+                      width={300}
+                      height={300}
+                      className="w-full h-[180px] object-cover hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="overflow-hidden rounded-md">
+                    <Image
+                      src={facility.images[2]}
+                      alt={`${facility.title} view 3`}
+                      width={300}
+                      height={300}
+                      className="w-full h-[180px] object-cover hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                className={`flex justify-center flex-col p-6 lg:p-8 ${
+                  index % 2 === 0 ? "order-2" : "lg:order-1"
+                }`}
+              >
+                <div className="border-l-4 border-[#DB2F2F] pl-4 mb-4">
+                  <Heading2 title={facility.title} />
+                </div>
+                <p className="text-sm md:text-base leading-relaxed text-gray-600">
+                  {facility.description}
+                </p>
+              </div>
             </div>
           </div>
-          <div
-            className={`flex justify-center flex-col gap-5 p-1 ${
-              index % 2 === 0 ? "order-2" : "lg:order-1"
-            }`}
-          >
-            <Heading2 title={facility.title} />
-            <p className="text-sm md:text-base">{facility.description}</p>
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </section>
   );
 };
