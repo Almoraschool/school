@@ -55,8 +55,8 @@ type SchoolEvent = {
 };
 
 type BlogType = {
-  haldwaniBlogs: Blog[];
-  haldwaniHomes: {
+  almoraBlogs: Blog[];
+  almoraHomes: {
     event: SchoolEvent[];
   }[];
 };
