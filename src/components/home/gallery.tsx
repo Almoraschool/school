@@ -28,8 +28,6 @@ const Gallery = ({
             height={300}
             className="w-full h-72 rounded-lg object-cover"
             quality={100}
-            priority={index < 3} // Load first three images with priority
-            loading={index >= 3 ? "lazy" : "eager"} // Lazy load the rest
           />
         ))}
       </div>
