@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import Pagination from "./pagination";
-import Image from "next/image";
 import { Button } from "../ui/button";
 import { poppins } from "@/utils/font";
 import Link from "next/link";
@@ -18,8 +17,7 @@ const Slider = ({
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  /* @ts-expect-error */
-  const goToSlide = (index) => {
+  const goToSlide = (index: number) => {
     setCurrentIndex(index);
   };
 
@@ -81,7 +79,7 @@ const Slider = ({
             className="w-full h-72 lg:h-96 object-cover"
           />
           <div className="absolute inset-0 mb-16 overflow-hidden lg:mb-[4.4rem] bg-[#3B2565]/60 p-5 text-white flex justify-center items-center flex-col gap-3 lg:gap-5  h-72 lg:h-96">
-          <div
+            <div
               className={`${poppins.className} text-2xl lg:text-3xl font-semibold tracking-tight leading-snug text-center`}
             >
               <p className="capitalize flex flex-col">

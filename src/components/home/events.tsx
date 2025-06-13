@@ -1,4 +1,3 @@
-//@ts-nocheck
 import React from "react";
 import {
   Carousel,
@@ -13,15 +12,15 @@ import Link from "next/link";
 
 type EventsProps = {
   blogs: Blog[];
-  events: Event[];
+  events: SchoolEvent[];
 };
 
 const Events = ({ blogs, events }: EventsProps) => {
   return (
     <section className="p-5 lg:p-10 container bg-[#DED4F2] grid grid-cols-1 lg:grid-cols-2">
-      <div className="pt-5 ">
+      <div className="pt-5 flex flex-col items-center lg:items-start">
         <Heading2 title="News & Events" />
-        <Carousel className="mt-10 overflow-hidden md:overflow-visible">
+        <Carousel className="mt-10 max-w-xs">
           <CarouselContent>
             {blogs.map((blog) => (
               <CarouselItem className="md:basis-1/2 rounded-3xl" key={blog?.id}>
@@ -35,7 +34,7 @@ const Events = ({ blogs, events }: EventsProps) => {
                   />
 
                   <Link href={`/blog/${blog?.slug}`}>
-                    <h3 className="px-2 py-1 text-[#3B2565] text-2xl font-semibold tracking-tight leading-snug">
+                    <h3 className="px-2 py-1 text-[#3B2565] text-lg font-semibold tracking-tight leading-snug">
                       {blog?.title}
                     </h3>
                   </Link>
@@ -49,28 +48,33 @@ const Events = ({ blogs, events }: EventsProps) => {
           <CarouselNext />
         </Carousel>
       </div>
-      <div className="mt-5 flex justify-center items-center flex-col">
+      <div className="pt-5 lg:mt-0 flex flex-col items-center lg:items-start">
         <Heading2 title="Upcoming Events" />
-
-        <div className="pt-5">
-          <div className="rounded-3xl bg-white h-96 w-80 md:w-[28rem] overflow-y-auto">
-            {events?.map((event) => (
-              <div
-                key={event?.id}
-                className="flex items-center text-[#3B2565] border-l-4 border-[#3B2565]  border-b-2"
-              >
-                <div className="bg-[#F8EF2E] w-28 py-1 px-2">
-                  <span className="text-lg lg:text-xl font-semibold">
-                    {event?.day}
-                  </span>
-                </div>
-                <div>
-                  <p className="text-xl font-semibold px-3">
-                    {event?.eventName}
-                  </p>
-                </div>
-              </div>
-            ))}
+        <div className="mt-10">
+          <div className="rounded-3xl bg-white h-96 w-80 lg:w-96 overflow-y-auto shadow-lg border border-purple-100">
+            {events?.length > 0 ? (
+              events.map((event, index) => (
+                <React.Fragment key={event?.id}>
+                  {index > 0 && <hr className="mx-4 my-3 border-gray-200" />}
+                  <div className="flex items-start border-l-4 border-[#3B2565] m-3 hover:bg-gray-50 transition-colors rounded-r-md">
+                    <div className="bg-[#F8EF2E] w-24 py-3 px-3 text-center rounded-r-md shadow-sm">
+                      <span className="text-lg font-bold block">
+                        {event?.day}
+                      </span>
+                    </div>
+                    <div className="px-4 py-2 flex-1">
+                      <p className="text-[#3B2565] text-lg font-semibold">
+                        {event?.eventName}
+                      </p>
+                    </div>
+                  </div>
+                </React.Fragment>
+              ))
+            ) : (
+              <p className="p-6 text-gray-500 text-center">
+                No upcoming events
+              </p>
+            )}
           </div>
         </div>
       </div>
