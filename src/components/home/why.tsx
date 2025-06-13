@@ -13,7 +13,7 @@ const Why = () => {
             <p className="text-[#3B2565] text-xl font-semibold decoration-[#3B2565] underline underline-offset-8">
               Best Teachers
             </p>
-            <img
+            <Image
               src={
                 "/assets/image/teacher-pointing-at-blackboard-svgrepo-com 1.png"
               }
@@ -32,7 +32,7 @@ const Why = () => {
             <p className="text-[#3B2565] text-xl font-semibold decoration-[#3B2565] underline underline-offset-8">
               Our Achivers
             </p>
-            <img
+            <Image
               src={"/assets/image/success-svgrepo-com (1) 1.png"}
               alt="best teacher logo"
               width={40}
@@ -48,7 +48,7 @@ const Why = () => {
             <p className="text-[#3B2565] text-xl font-semibold decoration-[#3B2565] underline underline-offset-8">
               Safe Campus
             </p>
-            <img
+            <Image
               src={"/assets/image/monitoring-svgrepo-com 1.png"}
               alt="best teacher logo"
               width={40}
@@ -65,7 +65,7 @@ const Why = () => {
             <p className="text-white text-xl font-semibold decoration-white underline underline-offset-8">
               Modern Education
             </p>
-            <img
+            <Image
               src={"/assets/image/computer-tv-svgrepo-com 1.png"}
               alt="best teacher logo"
               width={40}
@@ -81,7 +81,7 @@ const Why = () => {
             <p className="text-[#3B2565] text-xl font-semibold decoration-[#3B2565] underline underline-offset-8">
               Academic Excellence
             </p>
-            <img
+            <Image
               src={"/assets/image/student-reading-svgrepo-com 1.png"}
               alt="best teacher logo"
               width={40}
@@ -98,7 +98,7 @@ const Why = () => {
             <p className="text-white text-xl font-semibold decoration-white underline underline-offset-8">
               Good Sports Facilities
             </p>
-            <img
+            <Image
               src={"/assets/image/=s.png"}
               alt="best teacher logo"
               width={40}

@@ -45,14 +45,14 @@ const About = () => {
         className="relative h-[70vh] md:h-full
       "
       >
-        <img
+        <Image
           src={"/assets/image/about 1.jpg"}
           alt="About Image"
           width={400}
           height={400}
           className="rounded-lg absolute top-0 left-0 md:left-24 w-60 h-80 object-cover"
         />
-        <img
+        <Image
           src={"/assets/image/about 2.jpg"}
           alt="About Image"
           width={400}

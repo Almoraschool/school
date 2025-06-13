@@ -19,7 +19,7 @@ const Gallery = ({
 
       <div className=" mt-5 md:mt-10 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-5">
         {image?.map((uri, index) => (
-          <img
+          <Image
             key={index}
             src={uri.url}
             alt="image"

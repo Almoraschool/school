@@ -74,7 +74,7 @@ const Facilities = () => {
           className="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-10"
         >
           <div className={`${index % 2 === 0 ? "order-1" : "lg:order-2"}`}>
-            <img
+            <Image
               src={facility.images[0]}
               alt={facility.title}
               width={600}
@@ -82,14 +82,14 @@ const Facilities = () => {
               className=" h-[300px] w-full object-cover"
             />
             <div className="grid grid-cols-2">
-              <img
+              <Image
                 src={facility.images[1]}
                 alt={facility.title}
                 width={300}
                 height={300}
                 className="object-cover w-full"
               />
-              <img
+              <Image
                 src={facility.images[2]}
                 alt={facility.title}
                 width={300}

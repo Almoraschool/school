@@ -56,7 +56,7 @@ const FounderMessage = ({
                 <p className="pt-5">{message?.authorName}</p>
               </div>
 
-              <img
+              <Image
                 alt="founders"
                 src={message?.image?.url}
                 width={600}
@@ -95,7 +95,7 @@ export default FounderMessage;
     </p>
   </div>
 
-  <img
+  <Image
     alt="founders"
     src={"/assets/image/founders.png"}
     width={600}
@@ -140,7 +140,7 @@ export default FounderMessage;
       well-rounded individuals equipped to lead impactful lives.”
     </p>
   </div>
-  <img
+  <Image
     alt="founders"
     src={"/assets/image/principal.jpeg"}
     width={500}
@@ -189,7 +189,7 @@ export default FounderMessage;
       greater fulfillment . ”
     </p>
   </div>
-  <img
+  <Image
     alt="founders"
     src={"/assets/image/vice-principal.jpeg"}
     width={500}
@@ -243,7 +243,7 @@ export default FounderMessage;
       Haldwani, Almora, Ranikhet & Chaukhutia
     </p>
   </div>
-  <img
+  <Image
     alt="founders"
     src={"/assets/image/manager.jpeg"}
     width={500}
@@ -281,7 +281,7 @@ export default FounderMessage;
     </p>
     <p className="pt-5">NISHA SINGH - Administrator</p>
   </div>
-  <img
+  <Image
     alt="founders"
     src={"/assets/image/school-admin.jpeg"}
     width={500}
@@ -334,7 +334,7 @@ export default FounderMessage;
     </p>
     <p className="pt-5">Nishi Varma - Coordinator Message</p>
   </div>
-  <img
+  <Image
     alt="founders"
     src={"/assets/image/cordinate.jpeg"}
     width={500}
@@ -404,7 +404,7 @@ export default FounderMessage;
 //     </p>
 //     <p className="pt-5">Anita Bisht - Junior Coordinator Message</p>
 //   </div>
-//   <img
+//   <Image
 //     alt="founders"
 //     src={
 //       "/assets/image/WhatsApp Image 2024-08-28 at 10.07.10 AM.jpeg"

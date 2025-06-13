@@ -13,7 +13,7 @@ const Branches = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-5 py-10">
           <Link href={"https://www.beershebaschool.in/"}>
             <div className="rounded-xl  bg-white flex flex-col py-10 justify-center items-center">
-              <img
+              <Image
                 src={"/assets/image/haldwani (1).png"}
                 alt="logo"
                 width={900}
@@ -31,7 +31,7 @@ const Branches = () => {
 
           <Link href={"https://www.beershebaalmora.in/"}>
             <div className="rounded-xl  bg-white flex flex-col py-10 justify-center items-center">
-              <img
+              <Image
                 src={"/assets/image/haldwani (1).png"}
                 alt="logo"
                 width={900}
@@ -48,7 +48,7 @@ const Branches = () => {
           </Link>
           <Link href={"https://www.beershiva.in/"}>
             <div className="rounded-xl  bg-white flex flex-col py-10 justify-center items-center">
-              <img
+              <Image
                 src={"/assets/image/BEERSHIBA SCHOOL (2).jpg"}
                 alt="logo"
                 width={900}
@@ -65,7 +65,7 @@ const Branches = () => {
           </Link>
           <Link href={"https://www.beershivachaukhutia.in/"}>
             <div className="rounded-xl  bg-white flex flex-col py-10 justify-center items-center">
-              <img
+              <Image
                 src={"/assets/image/BEERSHIBA SCHOOL (2).jpg"}
                 alt="logo"
                 width={900}

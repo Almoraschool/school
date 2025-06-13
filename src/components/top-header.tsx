@@ -1,5 +1,6 @@
 import { poppins } from "@/utils/font";
 import { Link } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 const TopHeader = () => {
@@ -9,11 +10,21 @@ const TopHeader = () => {
     >
       <div className="flex gap-2 lg:gap-5 flex-col lg:flex-row">
         <div className="flex gap-2 items-center">
-          <img src="/assets/image/email.svg" alt="email" />
+          <Image
+            src="/assets/image/email.svg"
+            alt="email"
+            width={16}
+            height={16}
+          />
           <p>beersheba_s@rediffmail.com</p>
         </div>
         <div className="flex gap-2 items-center">
-          <img src="/assets/image/call.svg" alt="call" />
+          <Image
+            src="/assets/image/call.svg"
+            alt="call"
+            width={16}
+            height={16}
+          />
           <p>05962-358832, +91-9389732948, +91-8273953906</p>
         </div>
       </div>

@@ -25,23 +25,23 @@ const page = async ({
 }
   `;
   const response = await server_query_function(query);
-const { imageGallery } = await server_query_function(query) as {
+  const { imageGallery } = (await server_query_function(query)) as {
     imageGallery: {
-        heading: string;
-        banner: {
-            url: string;
-        };
-        images: Array<{
-            url: string;
-        }>;
+      heading: string;
+      banner: {
+        url: string;
+      };
+      images: Array<{
+        url: string;
+      }>;
     };
-};
- 
+  };
+
   console.log(response);
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="bg-white rounded-lg  overflow-hidden">
-        <img
+        <Image
           src={imageGallery?.banner?.url}
           alt={imageGallery?.heading}
           width={1920}
@@ -54,23 +54,28 @@ const { imageGallery } = await server_query_function(query) as {
           </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {imageGallery?.images.map((image, index) => (
-                <Link key={index} href={image.url} target="_blank" rel="noopener noreferrer">
+              <Link
+                key={index}
+                href={image.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <div className="relative group overflow-hidden rounded-lg">
-                    <img
-                        src={image.url}
-                        alt={`Gallery image ${index + 1}`}
-                        width={400}
-                        height={300}
-                        className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300"></div>
+                  <Image
+                    src={image.url}
+                    alt={`Gallery image ${index + 1}`}
+                    width={400}
+                    height={300}
+                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300"></div>
                 </div>
-                </Link>
+              </Link>
             ))}
           </div>
         </div>
-        </div>
       </div>
+    </div>
   );
 };
 

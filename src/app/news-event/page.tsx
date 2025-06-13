@@ -80,7 +80,7 @@ const Page = () => {
                 key={item.id}
                 className="bg-white w-80 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
               >
-                <img
+                <Image
                   src={item?.newsImage.url}
                   alt={item?.newsHeading}
                   width={500}

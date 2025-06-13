@@ -13,7 +13,7 @@ type props = {
 const Banner = ({ source, title, description }: props) => {
   return (
     <section className=" relative h-52 md:h-72 bg-primary text-white">
-      <img
+      <Image
         src={source}
         width={1200}
         height={600}

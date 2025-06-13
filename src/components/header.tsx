@@ -11,7 +11,7 @@ const Header = () => {
       className={`${poppins.className}  mx-auto px-3 lg:px-10 py-1 flex justify-between items-center font-medium`}
     >
       <Link href={"/"}>
-        <img
+        <Image
           src={"/assets/image/logo.jpg"}
           alt="logo"
           width={400}

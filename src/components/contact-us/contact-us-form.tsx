@@ -161,7 +161,7 @@ const ContactUsForm = () => {
         </form>
       </Form>
       <div className="absolute">
-        <img
+        <Image
           src={"/assets/image/letter_send 1.png"}
           alt="Contact us"
           width={200}

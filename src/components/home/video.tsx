@@ -26,11 +26,12 @@ const Video = ({
 Since 1977"
         />
         <p className="text-gray-600 my-5">
-        Since 1993, Beersheba School has been Almora&apos;s beacon of educational
-        distinction. For three decades, we&apos;ve fostered academic brilliance and holistic
-        growth, shaping well-rounded individuals. Our commitment to innovative learning
-        and character development prepares students for future success. Join Beersheba
-        and embark on a transformative educational journey.
+          Since 1993, Beersheba School has been Almora&apos;s beacon of
+          educational distinction. For three decades, we&apos;ve fostered
+          academic brilliance and holistic growth, shaping well-rounded
+          individuals. Our commitment to innovative learning and character
+          development prepares students for future success. Join Beersheba and
+          embark on a transformative educational journey.
         </p>
         <Link href={"/news-event"}>
           <Button>Explore Our Highlights</Button>
@@ -41,24 +42,24 @@ Since 1977"
           <CarouselContent>
             {featured?.map((item, index) => (
               <CarouselItem key={index}>
-          <Card className="border-none">
-            <CardContent className="flex flex-col gap-4 p-4">
-              <img
-                src={item?.newsImage?.url}
-                alt="featured news"
-                width={400}
-                height={300}
-                className="w-64 h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
-              />
-              <div className="text-center">
-                <Link href={`/news-event/${item?.id}`}>
-            <p className="text-lg font-semibold text-gray-800">
-              {item?.newsHeading}
-            </p>
-                </Link>
-              </div>
-            </CardContent>
-          </Card>
+                <Card className="border-none">
+                  <CardContent className="flex flex-col gap-4 p-4">
+                    <Image
+                      src={item?.newsImage?.url}
+                      alt="featured news"
+                      width={400}
+                      height={300}
+                      className="w-64 h-64 object-cover rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="text-center">
+                      <Link href={`/news-event/${item?.id}`}>
+                        <p className="text-lg font-semibold text-gray-800">
+                          {item?.newsHeading}
+                        </p>
+                      </Link>
+                    </div>
+                  </CardContent>
+                </Card>
               </CarouselItem>
             ))}
           </CarouselContent>

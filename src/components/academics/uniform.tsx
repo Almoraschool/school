@@ -31,7 +31,7 @@ const Uniform = () => {
               <tr>
                 <td className="border-2 border-[#3B2565] py-3 px-5">
                   <div className="flex justify-center items-center rounded-full p-5 bg-gray-300">
-                    <img
+                    <Image
                       src={"/assets/image/man (1).svg"}
                       alt="womenIcon"
                       width={150}
@@ -57,7 +57,7 @@ const Uniform = () => {
               <tr>
                 <td className="border-2 border-[#3B2565] py-3 px-5">
                   <div className="flex justify-center items-center rounded-full p-5 bg-gray-300">
-                    <img
+                    <Image
                       src={"/assets/image/man (2).svg"}
                       alt="womenIcon"
                       width={150}

@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="grid gap-5 lg:px-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-10 lg:py-16 border-b">
       <div className="flex justify-center items-center">
         <Link href={"/"}>
-          <img
+          <Image
             src="/assets/image/logo.jpg"
             alt="logo"
             width={400}
@@ -68,7 +68,7 @@ const Footer = () => {
         </p>
         <ul className="flex flex-col gap-2 font-medium">
           <li className="flex gap-5">
-            <img
+            <Image
               src={"/assets/image/locaation.svg"}
               alt="location"
               width={40}
@@ -80,7 +80,7 @@ const Footer = () => {
             </p>
           </li>
           <li className="flex gap-5">
-            <img
+            <Image
               src={"/assets/image/dark-call.svg"}
               alt="location"
               width={40}
@@ -89,7 +89,7 @@ const Footer = () => {
             <p>05962-358832, +91-9389732948, +91-8273953906</p>
           </li>
           <li className="flex gap-5">
-            <img
+            <Image
               src={"/assets/image/dark-email.svg"}
               alt="location"
               width={30}
@@ -99,20 +99,32 @@ const Footer = () => {
           </li>
           <li>
             <ul className="flex gap-2 items-center">
-              <Link href={"https://www.instagram.com/beershebaschoolalmora?igsh=MWdwd2d3bGt0ZGs3MQ=="}>
-              <li>
-                <Instagram />
-              </li>
+              <Link
+                href={
+                  "https://www.instagram.com/beershebaschoolalmora?igsh=MWdwd2d3bGt0ZGs3MQ=="
+                }
+              >
+                <li>
+                  <Instagram />
+                </li>
               </Link>
-              <Link href={"https://www.facebook.com/profile.php?id=100085427985837&mibextid=ZbWKwL"}>
-              <li>
-                <Facebook />
-              </li>
+              <Link
+                href={
+                  "https://www.facebook.com/profile.php?id=100085427985837&mibextid=ZbWKwL"
+                }
+              >
+                <li>
+                  <Facebook />
+                </li>
               </Link>
-              <Link href={"https://youtube.com/@beershebaschoolalmora?si=ZbE2mDktj7t4oJNh"}>
-              <li>
-                <Youtube />
-              </li>
+              <Link
+                href={
+                  "https://youtube.com/@beershebaschoolalmora?si=ZbE2mDktj7t4oJNh"
+                }
+              >
+                <li>
+                  <Youtube />
+                </li>
               </Link>
             </ul>
           </li>

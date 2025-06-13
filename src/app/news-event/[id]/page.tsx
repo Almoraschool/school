@@ -39,7 +39,7 @@ const page = async ({
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="bg-white rounded-lg  overflow-hidden">
-        <img
+        <Image
           src={newsEvent.newsImage.url}
           alt={newsEvent.newsHeading}
           width={1920}
@@ -50,10 +50,10 @@ const page = async ({
           <h1 className="text-3xl font-bold text-gray-900 mb-4">
             {newsEvent.newsHeading}
           </h1>
-            <div
+          <div
             className="text-gray-600 text-lg leading-relaxed"
             dangerouslySetInnerHTML={{ __html: newsEvent.newsDesc.html }}
-            />
+          />
         </div>
       </div>
     </div>

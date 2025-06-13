@@ -44,7 +44,7 @@ const page = async () => {
 
               <div className="flex flex-wrap items-center gap-5 justify-center md:justify-evenly py-5 md:py-10">
                 {img.image?.map((uri, i) => (
-                  <img
+                  <Image
                     key={i}
                     src={uri.url}
                     alt="gallery"

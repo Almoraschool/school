@@ -10,7 +10,7 @@ const Topper = () => {
 
       <div className="flex gap-32 flex-wrap justify-evenly p-10 my-10">
         <div className="bg-[#3B2565] rounded p-1 relative">
-          <img
+          <Image
             src={"/assets/image/topper1.png"}
             alt="toppers"
             width={100}
@@ -29,7 +29,7 @@ const Topper = () => {
         </div>
 
         <div className="bg-[#3B2565] rounded p-1 relative">
-          <img
+          <Image
             src={"/assets/image/topper1.png"}
             alt="toppers"
             width={100}
@@ -47,7 +47,7 @@ const Topper = () => {
           </div>
         </div>
         <div className="bg-[#3B2565] rounded p-1 relative">
-          <img
+          <Image
             src={"/assets/image/topper1.png"}
             alt="toppers"
             width={100}
@@ -65,7 +65,7 @@ const Topper = () => {
           </div>
         </div>
         <div className="bg-[#3B2565] rounded p-1 relative">
-          <img
+          <Image
             src={"/assets/image/topper1.png"}
             alt="toppers"
             width={100}
@@ -83,7 +83,7 @@ const Topper = () => {
           </div>
         </div>
         <div className="bg-[#3B2565] rounded p-1 relative">
-          <img
+          <Image
             src={"/assets/image/topper1.png"}
             alt="toppers"
             width={100}
@@ -101,7 +101,7 @@ const Topper = () => {
           </div>
         </div>
         <div className="bg-[#3B2565] rounded p-1 relative">
-          <img
+          <Image
             src={"/assets/image/topper1.png"}
             alt="toppers"
             width={100}
@@ -119,7 +119,7 @@ const Topper = () => {
           </div>
         </div>
         <div className="bg-[#3B2565] rounded p-1 relative">
-          <img
+          <Image
             src={"/assets/image/topper1.png"}
             alt="toppers"
             width={100}
@@ -137,7 +137,7 @@ const Topper = () => {
           </div>
         </div>
         <div className="bg-[#3B2565] rounded p-1 relative">
-          <img
+          <Image
             src={"/assets/image/topper1.png"}
             alt="toppers"
             width={100}

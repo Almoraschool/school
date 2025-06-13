@@ -12,7 +12,7 @@ const MissionAndValues = () => {
       <div className="my-5 p-2 lg:p-10 grid grid-cols-2 lg:grid-cols-4 gap-2">
         <div className="col-span-2 p-3 lg:p-5 rounded-lg bg-[#D6C9EF]/80">
           <div className="flex gap-5 items-center">
-            <img
+            <Image
               src={"/assets/image/accountability (2) 1.png"}
               alt="logo Mission and Values"
               width={60}
@@ -42,7 +42,7 @@ const MissionAndValues = () => {
           </div>
         </div>
         <div className="col-span-2 lg:col-span-1">
-          <img
+          <Image
             src={"/assets/image/WhatsApp Image 2024-08-27 at 11.18.24 PM.jpeg"}
             alt="About"
             width={250}
@@ -52,7 +52,7 @@ const MissionAndValues = () => {
         </div>
         <div className="col-span-2 lg:col-span-1 p-5 rounded-lg bg-[#D6C9EF]/80 text-[#3B2565]">
           <div className="flex gap-5 items-center">
-            <img
+            <Image
               src={"/assets/image/ep_view.png"}
               alt="logo Mission and Values"
               width={60}
@@ -72,7 +72,7 @@ const MissionAndValues = () => {
           </p>
         </div>
         <div className="col-span-2">
-          <img
+          <Image
             src={
               "/assets/image/WhatsApp Image 2024-08-27 at 11.18.24 PM (1).jpeg"
             }
@@ -84,7 +84,7 @@ const MissionAndValues = () => {
         </div>
         <div className="col-span-2 p-3 rounded-lg bg-[#D6C9EF]/80">
           <div className="flex gap-5 items-center">
-            <img
+            <Image
               src={"/assets/image/Vector-icon.png"}
               alt="logo Mission and Values"
               width={60}
