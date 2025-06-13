@@ -1,6 +1,7 @@
 import Banner from "@/components/banner";
 import Heading3 from "@/components/heading3";
 import { server_query_function } from "@/lib/graphql";
+import Image from "next/image";
 import React from "react";
 
 export const dynamic = "force-dynamic";
