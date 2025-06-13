@@ -3,13 +3,14 @@ import { gql } from "graphql-request";
 import Image from "next/image";
 import React from "react";
 
-const page = async ({
-  params,
-}: {
-  params: {
-    id: string;
-  };
-}) => {
+const page = async (
+  props: {
+    params: Promise<{
+      id: string;
+    }>;
+  }
+) => {
+  const params = await props.params;
   const query = gql`
     query MyQuery {
   newsEvent(where: {id: "${params.id}"}) {
