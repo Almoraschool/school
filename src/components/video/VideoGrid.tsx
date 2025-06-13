@@ -6,6 +6,7 @@ import VideoPlayer from "./VideoPlayer";
 interface VideoGridProps {
   videos: string[];
 }
+// VideoGrid component to display a grid of video players
 
 const VideoGrid = ({ videos }: VideoGridProps) => {
   const [dimensions, setDimensions] = useState({ width: 400, height: 220 });
