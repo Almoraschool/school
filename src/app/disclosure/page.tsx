@@ -53,7 +53,7 @@ const page = async () => {
           <Banner
             source="/assets/image/aboutImage.jpg"
             title="Disclosure"
-            description="Beersheba - Haldwani"
+            description="Beersheba - Almora"
           />
           <section className="container p-5 lg:p-10">
             <Heading3 title="Mandatory Disclosure" />
@@ -70,7 +70,7 @@ const page = async () => {
         <Banner
           source="/assets/image/aboutImage.jpg"
           title="Disclosure"
-          description="Beersheba - Haldwani"
+          description="Beersheba - Almora"
         />
 
         <section className="container p-5 lg:p-10">
