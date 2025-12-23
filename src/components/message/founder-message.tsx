@@ -91,7 +91,7 @@ export default FounderMessage;
       imagination and integrity the challenges of life.”
     </p>
     <p className="pt-5">
-      LATE MR. N.N.D BHATT - FOUNDER BEERSHEBA HALDWANI
+      LATE MR. N. N. D. BHATT - FOUNDER BEERSHEBA HALDWANI
     </p>
   </div>
 
@@ -114,7 +114,7 @@ export default FounderMessage;
   ‘training for life’, where effective, meaningful and joyful learning
   takes place. It is here that we begin to learn our lessons of life –
   to accept challenges, face competition, defeat and failure, and
-  rejoice at victory and triumph. Beersheba Sr. Sec. School is a
+  rejoice at victory and triumph. Beersheba Senior Secondary School is a
   symbol of progressive and quality education. Our motto, “Learn,
   Achieve and Inspire” captures the essence of our spirit. In our
   school, children gain an all-round education and achieve their
@@ -427,7 +427,7 @@ export default FounderMessage;
 // </p>
 // <p className="mt-2 lg:px-10 text-lg">
 //   Aligned with the NEP-2020, our goal is to foster active, engaged,
-//   and creative learners who are well-prepared for the evolving world.
+//   and creative learners who are well prepared for the evolving world.
 //   Our well-rounded curriculum, which includes literary activities,
 //   arts, sports, community service, and awareness programs, supports
 //   all-round development and aims to cultivate responsible global

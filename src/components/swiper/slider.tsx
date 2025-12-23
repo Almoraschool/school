@@ -45,7 +45,7 @@ const Slider = ({
               <p className="capitalize flex flex-col">
                 <span>WELCOME TO</span>
                 <span className="text-3xl py-3 md:text-5xl">
-                  BEERSHEBA SR. SEC. SCHOOL
+                  BEERSHEBA SENIOR SECONDARY SCHOOL
                 </span>
                 <span className="text-xl">ALMORA</span>
               </p>
@@ -85,7 +85,7 @@ const Slider = ({
               <p className="capitalize flex flex-col">
                 <span>WELCOME TO</span>
                 <span className="text-3xl py-3 md:text-5xl">
-                  BEERSHEBA SR. SEC. SCHOOL
+                  BEERSHEBA SENIOR SECONDARY SCHOOL
                 </span>
                 <span className="text-xl">ALMORA</span>
               </p>
@@ -124,7 +124,7 @@ const Slider = ({
               <p className="capitalize">
                 WELCOME TO{" "}
                 <span className=" text-3xl md:text-5xl">
-                  BEERSHEBA SR. SEC. SCHOOL{" "}
+                  BEERSHEBA SENIOR SECONDARY SCHOOL{" "}
                 </span>{" "}
                 <span className="text-xl">ALMORA</span>{" "}
               </p>

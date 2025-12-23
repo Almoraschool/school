@@ -36,7 +36,7 @@ const ContactUsCard = () => {
           <div className="flex gap-5 my-3">
             <MapPin size={35} />
             <p>
-              Beersheba Sr. Sec. School Bhawani Datt Parisar, Hira Dungri
+              Beersheba Senior Secondary School Bhawani Datt Parisar, Hira Dungri
               N.T.D., Almora.
             </p>
           </div>

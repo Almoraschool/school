@@ -6,7 +6,7 @@ const facilitiesData = [
   {
     title: "Library",
     description:
-      "The library is well stocked with books. Additionally, the subscription to newspapers and journals enhances students' knowledge, and the regular purchase of new books keeps the collection current. A diverse collection, including digital resources, would further enrich the learning experience. Comfortable reading spaces, knowledgeable library staff, and collaboration with teachers are crucial elements for fostering a positive environment. Implementing information literacy programs, organizing library events, and considering extended hours are also commendable practices that contribute to a thriving and dynamic library setting. Overall, your commitment to maintaining an engaging library bodes well for promoting a love of reading and supporting academic pursuits within the school community.",
+      "The library is well stocked with books. Additionally, the subscription to newspapers and journals enhances students' knowledge, and the regular purchase of new books keeps the collection current. A diverse collection, including digital resources, would further enriches the learning experience. Comfortable reading spaces, knowledgeable library staff, and collaboration with teachers are crucial elements in fostering a positive environment. Implementing information literacy programs, organizing library events, and considering extended hours are also commendable practices that contribute to a thriving and dynamic library setting. Overall, our commitment to maintaining an engaging library bodes well for promoting a love of reading and supporting academic pursuits within the school community.",
     images: [
       "/assets/image/library.jpg",
       "/assets/image/library 2.jpg",
@@ -26,7 +26,7 @@ const facilitiesData = [
   {
     title: "Computer Lab",
     description:
-      "The school features a spacious and well-equipped computer lab, complemented by a dedicated computer lecture room. Students benefit from ample hands-on experience with computers, recognizing the contemporary demand for technological proficiency. To meet this demand, the lab is equipped with the latest hardware and software. Furthermore, the program's syllabus is regularly updated to align with current technological advancements, ensuring students are well-prepared for the evolving landscape of technology.",
+      "The school features a spacious and well-equipped computer lab, complemented by a dedicated computer lecture room. Students benefit from ample hands-on experience with computers, recognizing the contemporary demand for technological proficiency. To meet this demand, the lab is equipped with the latest hardware and software. Furthermore, the program syllabus is regularly updated to align with current technological advancements, ensuring students are well prepared for the evolving landscape of technology.",
     images: [
       "/assets/image/computer lab.jpg",
       "/assets/image/computer 22.jpg",
@@ -36,7 +36,7 @@ const facilitiesData = [
   {
     title: "School Bus Facility",
     description:
-      "The bus routes and stops will be decided keeping in mind convenience to as many as possible.The change in bus route can be done on request of the parents, provided it does not cause any inconvenience to any body else.The student should arrive at the stop 5 minutes prior to the arrival time of the bus.Buses will not wait for the late comers.The safety of the student till he/she boards the bus is totally parents responsibility.",
+      "The bus routes and stops will be decided keeping in mind convenience to as many as possible. The change in bus route can be done on request of the parents, provided it does not cause any inconvenience to any body else.The student should arrive at the stop 5 minutes prior to the arrival time of the bus.Buses will not wait for the latecomers.The safety of the student till he/she boards the bus is totally parent's responsibility.",
     images: [
       "/assets/image/bus facility.jpg",
       "/assets/image/bus facility 1.jpg",
@@ -56,7 +56,7 @@ const facilitiesData = [
   {
     title: "Art Room",
     description:
-      "A quality music room in a school should prioritize acoustic design, soundproofing, and a diverse collection of well-maintained instruments. It should feature quality pianos/keyboards, amplification and recording equipment, and organized storage. Visual aids, and technology integration enhance the learning environment. ",
+      "At Beersheba School, our Art Rooms are dynamic centers where imagination knows no bounds. We provide a nurturing environment across all four branches for students to explore diverse mediums, develop technical skills, and discover their unique artistic voice. We believe that art is essential for developing critical thinking, observation skills, and emotional intelligence.",
     images: [
       "/assets/image/art room.jpg",
       "/assets/image/art room 1.jpg",

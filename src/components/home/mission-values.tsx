@@ -28,7 +28,7 @@ const MissionAndValues = () => {
             At Beersheba School, we are committed to fostering a nurturing and
             inclusive environment where every student can thrive. We emphasize
             the importance of holistic development, ensuring that our students
-            are well-prepared for the challenges of the future.
+            are well prepared for the challenges of the future.
           </p>
           <div className="text-[#3B2565] ">
             <div className="flex gap-5 items-center my-2">
@@ -68,7 +68,7 @@ const MissionAndValues = () => {
             At Beersheba School, we are committed to fostering a nurturing and
             inclusive environment where every student can thrive. We emphasize
             the importance of holistic development, ensuring that our students
-            are well-prepared for the challenges of the future.
+            are well prepared for the challenges of the future.
           </p>
         </div>
         <div className="col-span-2">

@@ -117,7 +117,7 @@ const RegisterationForm = () => {
 
   return (
     <section className="container p-3 lg:p-10 ">
-      <Heading3 title="Registeration Form" />
+      <Heading3 title="Registration Form" />
 
       <div className="max-w-4xl mx-auto pt-5 lg:pt-10 ">
         <Form {...form}>
@@ -166,9 +166,9 @@ const RegisterationForm = () => {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Student Name</FormLabel>
+                  <FormLabel>Student&apos;s Name</FormLabel>
                   <FormControl>
-                    <Input placeholder="Student Name..." {...field} />
+                    <Input placeholder="Student&apos;s Name..." {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -179,9 +179,9 @@ const RegisterationForm = () => {
               name="fatherName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Father Name</FormLabel>
+                  <FormLabel>Father&apos;s Name</FormLabel>
                   <FormControl>
-                    <Input placeholder="Father Name..." {...field} />
+                    <Input placeholder="Father&apos;s Name..." {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -192,9 +192,9 @@ const RegisterationForm = () => {
               name="motherName"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Mother Name</FormLabel>
+                  <FormLabel>Mother&apos;s Name</FormLabel>
                   <FormControl>
-                    <Input placeholder="Mother Name..." {...field} />
+                    <Input placeholder="Mother&apos;s Name..." {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -333,14 +333,14 @@ const RegisterationForm = () => {
               name="fatherOccupation"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Father Occupation</FormLabel>
+                  <FormLabel>Father&apos;s Occupation</FormLabel>
                   <Select
                     onValueChange={field.onChange}
                     defaultValue={field.value}
                   >
                     <FormControl>
                       <SelectTrigger>
-                        <SelectValue placeholder="Select Father Occupation..." />
+                        <SelectValue placeholder="Select Father&apos;s Occupation..." />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
@@ -357,14 +357,14 @@ const RegisterationForm = () => {
               name="motherOccupation"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Mother Occupation</FormLabel>
+                  <FormLabel>Mother&apos;s Occupation</FormLabel>
                   <Select
                     onValueChange={field.onChange}
                     defaultValue={field.value}
                   >
                     <FormControl>
                       <SelectTrigger>
-                        <SelectValue placeholder="Select Mother Occupation..." />
+                        <SelectValue placeholder="Select Mother&apos;s Occupation..." />
                       </SelectTrigger>
                     </FormControl>
                     <SelectContent>
@@ -394,9 +394,9 @@ const RegisterationForm = () => {
               name="referedBy"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Refered By</FormLabel>
+                  <FormLabel>Referred By</FormLabel>
                   <FormControl>
-                    <Input placeholder="Refered By..." {...field} />
+                    <Input placeholder="Referred By..." {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>

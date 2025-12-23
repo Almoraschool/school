@@ -16,29 +16,25 @@ const About = () => {
         <Heading2 title="Beersheba School" />
 
         <p className="text-gray-600 mt-5">
-          Established in the heart of Almora, Beersheba Sr. Sec School began its
-          journey in 1993, under the visionary leadership of the late Shri. and
-          Smt. N.N.D. Bhatt. Starting with just 60 students, their dedication
+          Established in the heart of Almora, Beersheba Senior Secondary School began its
+          journey in 1993, under the visionary leadership of the late Shri and Smt. N. N. D. Bhat. Starting with just 60 students, their dedication
           and inspiration have been pivotal in shaping the school&apos;s growth
-          and commitment to educational excellence. Today, Beersheba Sr. Sec
-          School stands as a premier co-educational English Medium institution,
+          and commitment to educational excellence. Today, Beersheba Senior Secondary School stands as a premier co-educational, English-medium  institution,
           renowned for its nurturing environment and comprehensive curriculum.
         </p>
         <p className="text-gray-600 mt-5">
-          Over the decades, Beersheba Sr. Sec School has expanded to accommodate
+          Over the decades, Beersheba Senior Secondary School has expanded to accommodate
           a diverse student body and a dedicated faculty committed to holistic
           development. With a rich legacy of over many years of academic
-          excellence, our school features a library of over 3000 books and
+          excellence, our school features a library of over 3,000 books and
           advanced facilities, including 70 computers. Affiliated with CBSE and
           adhering to state government norms, we uphold rigorous standards in
           education to prepare students for a successful future.
         </p>
         <p className="text-gray-600 mt-5">
           Beersheba School, situated in Almora, was founded on , 1993, at the
-          city&apos;s core, starting with just 60 students. This co-educational
-          English Medium school was established by the late Shri. and Smt.
-          N.N.D. Bhatt. The school&apos;s origin, growth, and legacy are a
-          testament to the enduring dedication of the late Mr. N.N.D. Bhatt.
+          city&apos;s core, starting with just 60 students. This co-educational, English-medium school was established by the late Shri and Smt. N. N. D. Bhat. The school&apos;s origin, growth, and legacy are a
+          testament to the enduring dedication of the late Mr. N. N. D. Bhatt.
         </p>
       </div>
       <div

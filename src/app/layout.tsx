@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "Beersheba Sr Sec School in Almora excels in providing quality education with modern facilities and a focus on holistic development. Secure your child's future with us!",
   keywords:
-    "Beersheba Senior Secondary School Almora,Beersheba sr. sec. school, Top Almora school, Best school Almora, Beersheba school homepage, Quality education Almora, Best school near me ",
+    "Beersheba Senior Secondary School Almora,Beersheba Senior Secondary School, Top Almora school, Best school Almora, Beersheba school homepage, Quality education Almora, Best school near me ",
 };
 
 export default function RootLayout({

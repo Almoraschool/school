@@ -25,7 +25,7 @@ const Video = ({ featured }: { featured: FeaturedItem[] }) => {
    <section className="container relative bg-[#DED4F2] grid grid-cols-1 lg:grid-cols-2 pt-20 pb-96 lg:pb-48">
       <div>
         <Heading2
-          title="Leading School in City
+          title="Leading School in the City
 Since 1977"
         />
         <p className="text-gray-600 my-5">

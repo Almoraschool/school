@@ -23,7 +23,7 @@ const Branches = () => {
               <h5
                 className={`${poppins.className} text-lg lg:text-xl text-[#3B2565] pt-5 font-bold text-center`}
               >
-                Beersheba Sr. Sec. School
+                Beersheba Senior Secondary School
               </h5>
               <p>Haldwani</p>
             </div>
@@ -41,7 +41,7 @@ const Branches = () => {
               <h5
                 className={`${poppins.className} text-lg lg:text-xl text-[#3B2565] pt-5 font-bold text-center`}
               >
-                Beersheba Sr. Sec. School
+                Beersheba Senior Secondary School
               </h5>
               <p>Almora</p>
             </div>
