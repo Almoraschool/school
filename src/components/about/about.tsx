@@ -25,7 +25,7 @@ const About = () => {
         <p className="text-gray-600 mt-5">
           Over the decades, Beersheba Senior Secondary School has expanded to accommodate
           a diverse student body and a dedicated faculty committed to holistic
-          development. With a rich legacy of over many years of academic
+          development. With a rich legacy of over 45 years of academic
           excellence, our school features a library of over 3,000 books and
           advanced facilities, including 70 computers. Affiliated with CBSE and
           adhering to state government norms, we uphold rigorous standards in
