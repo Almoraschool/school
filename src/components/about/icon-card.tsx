@@ -16,7 +16,7 @@ const IconCard = () => {
       </div>
       <div className="bg-white shadow-lg flex-col p-5 rounded-xl flex justify-center items-center">
         <BookMarked size={60} className="text-[#3B2565]" />
-        <p className="text-lg font-semibold mt-3 md:mt-5">{3,000}+</p>
+        <p className="text-lg font-semibold mt-3 md:mt-5">3,000+</p>
         <p>Books</p>
       </div>
       <div className="bg-white shadow-lg flex-col p-5 rounded-xl flex justify-center items-center">
