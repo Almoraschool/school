@@ -6,7 +6,7 @@ const facilitiesData = [
   {
     title: "Library",
     description:
-      "The library is well stocked with books. Additionally, the subscription to newspapers and journals enhances students' knowledge, and the regular purchase of new books keeps the collection current. A diverse collection, including digital resources, would further enriches the learning experience. Comfortable reading spaces, knowledgeable library staff, and collaboration with teachers are crucial elements in fostering a positive environment. Implementing information literacy programs, organizing library events, and considering extended hours are also commendable practices that contribute to a thriving and dynamic library setting. Overall, our commitment to maintaining an engaging library bodes well for promoting a love of reading and supporting academic pursuits within the school community.",
+      "The library is well stocked with books. Additionally, subscription to newspapers and journals enhances students' knowledge, and the regular purchase of new books keeps the collection current. A diverse collection, including digital resources, would further enriches the learning experience. Comfortable reading spaces, knowledgeable library staff, and collaboration with teachers are crucial elements in fostering a positive environment. Implementing information literacy programs, organizing library events, and considering extended hours are also commendable practices that contribute to a thriving and dynamic library setting. Overall, our commitment to maintaining an engaging library bodes well for promoting a love of reading and supporting academic pursuits within the school community.",
     images: [
       "/assets/image/library.jpg",
       "/assets/image/library 2.jpg",
