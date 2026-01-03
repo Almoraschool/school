@@ -47,7 +47,7 @@ query MyQuery {
     <>
       <Banner
         title="Message"
-        description="Beersheba - Haldwani"
+        description="Beersheba - Almora"
         source="/assets/image/aboutImage.jpg"
       />
       <FounderMessage messages={response.messages[0].messages} />

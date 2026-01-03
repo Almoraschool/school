@@ -91,7 +91,7 @@ export default FounderMessage;
       imagination and integrity the challenges of life.”
     </p>
     <p className="pt-5">
-      LATE MR. N. N. D. BHATT - FOUNDER BEERSHEBA HALDWANI
+      LATE MR. N. N. D. BHATT - FOUNDER BEERSHEBA ALMORA
     </p>
   </div>
 

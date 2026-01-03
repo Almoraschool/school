@@ -29,7 +29,7 @@ const About = () => {
         <Heading2 title="Beersheba School" />
 
         <p className="text-gray-600 mt-5">
-          Founded in 1993, in Almora by the late Shri and Smt. N. N. D. Bhat,
+          Founded in 1993, in Almora by the late Shri and Smt. N. N. D. Bhatt,
           Beersheba School has evolved from 60 students to a leading educational
           institution. Our co-educational, English-medium  school offers diverse
           courses including Humanities, Commerce, AI, Coding, Yoga, and Science.

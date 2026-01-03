@@ -17,7 +17,7 @@ const About = () => {
 
         <p className="text-gray-600 mt-5">
           Established in the heart of Almora, Beersheba Senior Secondary School began its
-          journey in 1993, under the visionary leadership of the late Shri and Smt. N. N. D. Bhat. Starting with just 60 students, their dedication
+          journey in 1993, under the visionary leadership of the late Shri and Smt. N. N. D. Bhatt. Starting with just 60 students, their dedication
           and inspiration have been pivotal in shaping the school&apos;s growth
           and commitment to educational excellence. Today, Beersheba Senior Secondary School stands as a premier co-educational, English-medium  institution,
           renowned for its nurturing environment and comprehensive curriculum.
@@ -33,7 +33,7 @@ const About = () => {
         </p>
         <p className="text-gray-600 mt-5">
           Beersheba School, situated in Almora, was founded on , 1993, at the
-          city&apos;s core, starting with just 60 students. This co-educational, English-medium school was established by the late Shri and Smt. N. N. D. Bhat. The school&apos;s origin, growth, and legacy are a
+          city&apos;s core, starting with just 60 students. This co-educational, English-medium school was established by the late Shri and Smt. N. N. D. Bhatt. The school&apos;s origin, growth, and legacy are a
           testament to the enduring dedication of the late Mr. N. N. D. Bhatt.
         </p>
       </div>

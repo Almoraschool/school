@@ -26,7 +26,7 @@ const Video = ({ featured }: { featured: FeaturedItem[] }) => {
       <div>
         <Heading2
           title="Leading School in the City
-Since 1977"
+Since 1993"
         />
         <p className="text-gray-600 my-5">
           Since 1993, Beersheba School has been Almora&apos;s beacon of

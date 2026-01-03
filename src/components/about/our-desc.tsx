@@ -17,7 +17,7 @@ const OurDesc = () => {
       </p>
       <IconCard />
       <p className=" text-gray-600 mt-3 md:mt-5">
-        Beersheba School, located in Almora, was established on July 4, 1977, in
+        Beersheba School, located in Almora, was established on July 4, 1993, in
         the heart of the city with an initial enrollment of only 60 children.
         This co-educational, English-medium  school was founded by the late Shri and Smt. N. N. D. Bhat. The school&apos;s origin, existence, and
         development can be attributed to the unwavering efforts of the late Mr.
