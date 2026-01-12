@@ -7,7 +7,7 @@ const page = () => {
   return (
     <>
       <Banner
-        source="/assets/image/aboutImage.jpg"
+        source="/assets/image/banner.JPG"
         title="Contact Us"
         description="Beersheba - Almora"
       />

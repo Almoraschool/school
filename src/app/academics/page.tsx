@@ -12,7 +12,7 @@ const page = () => {
         description="Beersheba - Almora"
         source="/assets/image/aboutImage.jpg"
       />
-      <Sessions />
+      {/* <Sessions /> */}
       <Uniform />
       {/* <TransferCertificate /> */}
     </>
