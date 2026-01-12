@@ -90,3 +90,6 @@ type DisclosureType = {
   title: string;
   url: string;
 }[];
+
+
+type galleryCategoryType = {}
