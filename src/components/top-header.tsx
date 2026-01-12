@@ -25,7 +25,7 @@ const TopHeader = () => {
             width={16}
             height={16}
           />
-          <p>05962-358832, +91-9389732948, +91-8273953906</p>
+          <p>05962-358832, +91-8273953906</p>
         </div>
       </div>
       <div className="lg:flex gap-5 hidden">
