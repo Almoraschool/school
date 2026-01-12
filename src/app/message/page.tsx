@@ -48,7 +48,7 @@ query MyQuery {
       <Banner
         title="Message"
         description="Beersheba - Almora"
-        source="/assets/image/banner.JPG"
+        source="/assets/image/banner.jpg"
       />
       <FounderMessage messages={response.messages[0].messages} />
       <Branches />

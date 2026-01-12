@@ -51,7 +51,7 @@ const page = async () => {
       return (
         <>
           <Banner
-            source="/assets/image/banner.JPG"
+            source="/assets/image/banner.jpg"
             title="Disclosure"
             description="Beersheba - Almora"
           />
