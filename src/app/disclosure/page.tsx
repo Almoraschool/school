@@ -68,7 +68,7 @@ const page = async () => {
     return (
       <>
         <Banner
-          source="/assets/image/aboutImage.jpg"
+     source="/assets/image/banner.jpg"
           title="Disclosure"
           description="Beersheba - Almora"
         />
@@ -101,7 +101,7 @@ const page = async () => {
     return (
       <>
         <Banner
-          source="/assets/image/aboutImage.jpg"
+          source="/assets/image/banner.jpg"
           title="Disclosure"
           description="Beersheba - Almora"
         />
