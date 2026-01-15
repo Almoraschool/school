@@ -10,9 +10,9 @@ const page = () => {
       <Banner
         title="Academics"
         description="Beersheba - Almora"
-        source="/assets/image/aboutImage.jpg"
+        source="/assets/image/banner.jpg"
       />
-      {/* <Sessions /> */}
+      <Sessions />
       <Uniform />
       {/* <TransferCertificate /> */}
     </>

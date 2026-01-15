@@ -4,7 +4,7 @@ import Heading3 from "../heading3";
 const Sessions = () => {
   return (
     <section className="container p-5 lg:p-10">
-      <Heading3 title="Session 2024-2025" />
+      <Heading3 title="Session 2025-2026" />
       <div className="lg:p-10">
         <p className="text-gray-600">
           At{" "}
