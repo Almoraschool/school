@@ -77,25 +77,25 @@ Since 1993"
           title="Campus"
           desc="Discover our state-of-the-art facilities and vibrant learning spaces."
           source="/assets/image/icon cool-icon-l19.svg"
-          link="/image-gallery/cm5mnfbsx02mx07o1cneh7g2p"
+          link="/image-gallery/cmkc84so14wzj06pn6e4mel49"
         />
         <VideoCard
           title=" Teacher"
           desc="Meet our dedicated educators shaping bright futures with passion."
           source="/assets/image/icon cool-icon-l22.svg"
-          link="/image-gallery/cm5mnegp902d807o727z5rmcy"
+          link="/image-gallery/cmkc83t504wy006pnooowraw3"
         />
         <VideoCard
           title="Library"
           desc="Explore our vast collection of books and digital resources for knowledge seekers."
           source="/assets/image/icon cool-icon-l25.svg"
-          link="/image-gallery/cm5moi6bh037107o75b1f654h"
+          link="/image-gallery/cmkc82npa4wyk07phsm8v8ekg"
         />
         <VideoCard
           title="Smart School"
           desc="Experience cutting-edge technology enhancing every aspect of learning"
           source="/assets/image/icon cool-icon-l28.svg"
-          link="/image-gallery/cm5moitf803ei07o1bwivnwd7"
+          link="/image-gallery/cmkc80rc04wua06pnlge9x540"
         />
       </div>
     </section>
