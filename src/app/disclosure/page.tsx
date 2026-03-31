@@ -43,8 +43,7 @@ const DisclosureRow = ({ title, url, index }: DisclosureRowProps) => (
 
 const page = async () => {
   try {
-    const response = await server_query_function(DISCLOSURE_QUERY);
-    //@ts-expect-error
+    const response = (await server_query_function(DISCLOSURE_QUERY)) as any;
     const disclosures = response.disclosures as DisclosureItem[];
 
     if (!disclosures?.length) {

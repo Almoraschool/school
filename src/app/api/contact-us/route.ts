@@ -1,9 +1,12 @@
-import { GoogleAuth } from "google-auth-library";
-import { google } from "googleapis";
 import { NextResponse } from "next/server";
+
+export const dynamic = "force-dynamic";
 
 export async function POST(req: Request) {
   console.log("🟢🟢🟢🟢🟢🟢Requesting...");
+  const { GoogleAuth } = await import("google-auth-library");
+  const { google } = await import("googleapis");
+
   const auth = new GoogleAuth({
     scopes: "https://www.googleapis.com/auth/spreadsheets",
     projectId: "beersheba-school",
@@ -35,12 +38,11 @@ export async function POST(req: Request) {
       spreadsheetId,
       range,
       valueInputOption: "USER_ENTERED",
-      resource,
+      requestBody: resource,
     });
 
     return NextResponse.json({ result });
-  } catch (err) {
-    //@ts-ignore
-    throw new Error(err);
+  } catch (err: any) {
+    throw new Error(err.message || "Failed to submit form");
   }
 }

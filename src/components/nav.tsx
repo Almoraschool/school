@@ -106,6 +106,18 @@ const Nav = () => {
           Register
         </li>
       </Link>
+      <Link href={"/tc-verify"}>
+        <li
+          className={cn(
+            "hover:text-[#DB2F2F] text-[#3B2565]",
+            path === "/tc-verify"
+              ? "underline text-[#DB2F2F] underline-offset-8 decoration-2 decoration-[#DB2F2F]"
+              : "border-b-2 border-transparent"
+          )}
+        >
+          TC Verify
+        </li>
+      </Link>
     </ul>
   );
 };

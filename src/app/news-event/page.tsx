@@ -7,9 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-const Page = () => {
-  const [filteredNews, setFilteredNews] = useState<NewsEvent[]>([]);
-  const query = `query MyQuery {
+const query = `query MyQuery {
   newsEvents (first: 100) {
     newsImage {
       url
@@ -18,6 +16,9 @@ const Page = () => {
     id
   }
 }`;
+
+const Page = () => {
+  const [filteredNews, setFilteredNews] = useState<NewsEvent[]>([]);
 
   interface NewsEvent {
     newsImage: {
@@ -31,16 +32,16 @@ const Page = () => {
     newsEvents: NewsEvent[];
   }
 
-  useEffect(() => {
-    news();
-  }, []);
-
-  async function news() {
+  const news = React.useCallback(async () => {
     const result = (await server_query_function(query)) as VideoResponse;
     setFilteredNews(result.newsEvents);
-  }
+  }, []);
 
-  console.log(news);
+  useEffect(() => {
+    news();
+  }, [news]);
+
+  console.log(filteredNews);
 
   return (
     <div>
@@ -74,7 +75,7 @@ const Page = () => {
           </Button>
         </div>
         <div className="container grid py-10 md:py-14 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 p-4">
-          {filteredNews.reverse().map((item) => (
+          {[...filteredNews].reverse().map((item) => (
             <Link href={`/news-event/${item?.id}`} key={item?.id}>
               <div
                 key={item.id}

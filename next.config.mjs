@@ -9,6 +9,7 @@ const nextConfig = {
     ],
   },
 
+  serverExternalPackages: ["googleapis", "google-auth-library"],
   async redirects() {
     return [
       {

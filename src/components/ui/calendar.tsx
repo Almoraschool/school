@@ -25,7 +25,7 @@ function Calendar({
   showOutsideDays = true,
   ...props
 }: CalendarProps) {
-  const monthNames = React.useMemo(() => generateMonthNames(props.locale), []);
+  const monthNames = React.useMemo(() => generateMonthNames(props.locale), [props.locale]);
   const [month, setMonth] = React.useState<Date>();
   return (
     <DayPicker

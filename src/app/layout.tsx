@@ -10,6 +10,17 @@ import Link from "next/link";
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
 
+if (typeof window === "undefined") {
+  (global as any).localStorage = {
+    getItem: () => null,
+    setItem: () => {},
+    removeItem: () => {},
+    clear: () => {},
+    key: () => null,
+    length: 0,
+  };
+}
+
 export const metadata: Metadata = {
   title: "Beersheba Sr Sec School Almora - Leading Education Hub",
   description:

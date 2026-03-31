@@ -20,49 +20,42 @@ const ToppersResult = () => {
   const [classXiiTopperDesc, setClassXiiTopperDesc] = useState<string>("");
 
   useEffect(() => {
-    toppers();
-  }, []);
-
-  const query = `
-  query MyQuery {
-    homes {
-      toppers {
-        class
-        id
-        topperDetails {
+    const query = `
+    query MyQuery {
+      homes {
+        toppers {
+          class
           id
-          name
-          percentage
-          subject
-          topperImage {
-            url
+          topperDetails {
+            id
+            name
+            percentage
+            subject
+            topperImage {
+              url
+            }
           }
         }
+      classXTopperHeading
+      classXTopperDesc
+      classXiiTopperHeading
+      classXiiTopperDesc
       }
-    classXTopperHeading
-    classXTopperDesc
-    classXiiTopperHeading
-    classXiiTopperDesc
     }
-  }
-  `;
+    `;
 
-  async function toppers() {
-    const response = await client_query_function(query);
-    //@ts-expect-error
-    setTopper(response.homes[0].toppers[0]);
-    //@ts-expect-error
-    setOtherTopper(response.homes[0].toppers[1]);
-    //@ts-expect-error
-    setClassXTopperHeading(response.homes[0].classXTopperHeading);
-    //@ts-expect-error
+    async function fetchToppers() {
+      const response = (await client_query_function(query)) as any;
+      setTopper(response.homes[0].toppers[0]);
+      setOtherTopper(response.homes[0].toppers[1]);
+      setClassXTopperHeading(response.homes[0].classXTopperHeading);
 
-    setClassXTopperDesc(response.homes[0].classXTopperDesc);
-    //@ts-expect-error
-    setClassXiiTopperHeading(response.homes[0].classXiiTopperHeading);
-    //@ts-expect-error
-    setClassXiiTopperDesc(response.homes[0].classXiiTopperDesc);
-  }
+      setClassXTopperDesc(response.homes[0].classXTopperDesc);
+      setClassXiiTopperHeading(response.homes[0].classXiiTopperHeading);
+      setClassXiiTopperDesc(response.homes[0].classXiiTopperDesc);
+    }
+    fetchToppers();
+  }, []);
 
   return (
     <section className="container p-5 lg:p-10">

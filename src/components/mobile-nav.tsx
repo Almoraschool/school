@@ -84,6 +84,13 @@ const MobileNav = () => {
                   </li>
                 </Link>
               </SheetClose>
+              <SheetClose asChild>
+                <Link href={"/tc-verify"}>
+                  <li className="hover:text-[#3B2565] py-2 text-base font-medium">
+                    TC Verify
+                  </li>
+                </Link>
+              </SheetClose>
             </ul>
           </nav>
         </SheetContent>

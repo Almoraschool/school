@@ -1,8 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import React from "react";
-// @ts-expect-error
-const Pagination = ({ currentIndex, goToSlide }) => {
+const Pagination = ({ currentIndex, goToSlide }: any) => {
   return (
     <div className="flex justify-center  mt-2 lg:mt-4">
       <div className="w-full relative h-14 gap-1 lg:gap-2 rounded-2xl flex justify-between items-center">
