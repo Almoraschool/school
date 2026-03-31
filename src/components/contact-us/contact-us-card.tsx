@@ -26,6 +26,7 @@ const ContactUsCard = () => {
             <div>
               <p>05962-358832 </p>
               <p>+91-8273953906</p>
+              <p>+91 70787 96616</p>
             </div>
           </div>
           <div className="flex gap-5 my-3">
