@@ -6,13 +6,12 @@ import {
   Search,
   Loader2,
   CheckCircle2,
-  XCircle,
   FileText,
   Calendar,
   Hash,
   GraduationCap,
-  ExternalLink,
   AlertCircle,
+  ExternalLink,
   ShieldCheck,
   FileSearch,
   Lock,
@@ -31,7 +30,18 @@ const TCVerifyPage = () => {
     const [result, setResult] = useState<any>(null);
     const [error, setError] = useState<string | null>(null);
     const [searchCriteria, setSearchCriteria] = useState("tcNumber");
+    const [searchValue, setSearchValue] = useState("");
+    const [dobValue, setDobValue] = useState("");
     const [hasSearched, setHasSearched] = useState(false);
+
+    const handleCriteriaChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        setSearchCriteria(e.target.value);
+        setSearchValue("");
+        setDobValue("");
+        setResult(null);
+        setError(null);
+        setHasSearched(false);
+    };
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -51,7 +61,7 @@ const TCVerifyPage = () => {
         });
     };
 
-    const isVerified = result?.verificationStatus?.toLowerCase() === "verified";
+
 
     return (
         <div className={cn(poppins.className, "min-h-screen flex flex-col items-center bg-white")}>
@@ -122,7 +132,7 @@ const TCVerifyPage = () => {
                             <select
                                 name="searchBy"
                                 value={searchCriteria}
-                                onChange={(e) => setSearchCriteria(e.target.value)}
+                                onChange={handleCriteriaChange}
                                 className="w-full bg-[#FAFAFB] border-2 border-gray-100 rounded-xl px-4 py-3 text-gray-800 text-[14px] appearance-none focus:outline-none focus:border-[#3B2565]/20 focus:bg-white font-medium cursor-pointer transition-all"
                                 style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%233B2565' stroke-width='2.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`, backgroundPosition: 'right 1rem center', backgroundRepeat: 'no-repeat', backgroundSize: '1rem' }}
                             >
@@ -143,6 +153,8 @@ const TCVerifyPage = () => {
                                         <label className="text-[11px] font-bold text-gray-500 uppercase tracking-widest mb-1 block ml-1">Student Name</label>
                                         <input
                                             name="searchValue"
+                                            value={searchValue}
+                                            onChange={(e) => setSearchValue(e.target.value)}
                                             required
                                             placeholder="e.g. Rahul Sharma"
                                             className="w-full bg-[#FAFAFB] border-2 border-gray-100 rounded-xl px-4 py-3 text-gray-800 text-[14px] placeholder:text-gray-400 focus:outline-none focus:border-[#3B2565]/20 focus:bg-white font-medium transition-all"
@@ -153,6 +165,8 @@ const TCVerifyPage = () => {
                                         <input
                                             name="dobValue"
                                             type="date"
+                                            value={dobValue}
+                                            onChange={(e) => setDobValue(e.target.value)}
                                             required
                                             className="w-full bg-[#FAFAFB] border-2 border-gray-100 rounded-xl px-4 py-3 text-gray-800 text-[14px] focus:outline-none focus:border-[#3B2565]/20 focus:bg-white font-medium transition-all"
                                         />
@@ -165,6 +179,8 @@ const TCVerifyPage = () => {
                                     </label>
                                     <input
                                         name="searchValue"
+                                        value={searchValue}
+                                        onChange={(e) => setSearchValue(e.target.value)}
                                         required
                                         placeholder={searchCriteria === "tcNumber" ? "e.g. TC-2024-001" : "e.g. ADM-12345"}
                                         className="w-full bg-[#FAFAFB] border-2 border-gray-100 rounded-xl px-4 py-3 text-gray-800 text-[14px] placeholder:text-gray-400 focus:outline-none focus:border-[#3B2565]/20 focus:bg-white font-medium transition-all"
@@ -204,28 +220,21 @@ const TCVerifyPage = () => {
                 {result && (
                     <div className="mt-6 bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden animate-in fade-in slide-in-from-bottom-5 duration-500">
                         {/* Result Header */}
-                        <div className={cn("px-6 py-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b", 
-                            isVerified ? "bg-green-50/50 border-green-100" : "bg-red-50 border-red-100")}>
+                        <div className="px-6 py-5 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b bg-green-50/50 border-green-100">
                             <div className="flex items-center gap-3">
-                                <div className={cn("w-12 h-12 rounded-xl flex items-center justify-center", 
-                                    isVerified ? "bg-green-100" : "bg-red-100")}>
-                                    {isVerified
-                                        ? <ShieldCheck size={24} className="text-green-600" />
-                                        : <XCircle size={24} className="text-red-500" />
-                                    }
+                                <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-green-100">
+                                    <ShieldCheck size={24} className="text-green-600" />
                                 </div>
                                 <div>
-                                    <p className={cn("text-[10px] font-black uppercase tracking-widest", 
-                                        isVerified ? "text-green-600" : "text-red-600")}>
-                                        {isVerified ? "✓ Verified Certificate" : "⚠ Unverified Certificate"}
+                                    <p className="text-[10px] font-black uppercase tracking-widest text-green-600">
+                                        ✓ Certificate Found
                                     </p>
                                     <h3 className="text-lg font-black text-gray-800">{result.studentName}</h3>
                                 </div>
                             </div>
-                            <div className={cn("inline-flex items-center gap-2 px-4 py-2 rounded-full text-[13px] font-bold border", 
-                                isVerified ? "bg-green-100 text-green-700 border-green-200" : "bg-red-100 text-red-700 border-red-200")}>
-                                {isVerified ? <CheckCircle2 size={16} /> : <XCircle size={16} />}
-                                {result.verificationStatus}
+                            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-[13px] font-bold border bg-green-100 text-green-700 border-green-200">
+                                <CheckCircle2 size={16} />
+                                Authentic Record
                             </div>
                         </div>
 
@@ -249,7 +258,7 @@ const TCVerifyPage = () => {
                             </div>
 
                             {/* Download TC Button */}
-                            {isVerified && result.driveLink && (
+                            {result.driveLink && (
                                 <div className="mt-8 flex justify-center">
                                     <a
                                         href={result.driveLink}

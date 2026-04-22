@@ -13,13 +13,12 @@ export async function verifyTransferCertificate(formData: FormData) {
         if (searchBy === "tcNumber") {
             query = gql`
                 query MyQuery {
-                    transferCertificates(where: { tcNumber: "${searchValue}" }) {
+                    transferCertificates2(where: { tcNumber: "${searchValue}" }, first: 1) {
                         studentName
                         tcNumber
                         admissionNumber
                         studentClass
                         dob
-                        verificationStatus
                         driveLink
                     }
                 }
@@ -27,18 +26,15 @@ export async function verifyTransferCertificate(formData: FormData) {
         } else if (searchBy === "studentNameDob") {
             query = gql`
                 query MyQuery {
-                    transferCertificates(where: { 
-                        AND: [
-                            { studentName: "${searchValue}" },
-                            { dob: "${dobValue}" }
-                        ]
-                    }) {
+                    transferCertificates2(where: { 
+                        studentName: "${searchValue}",
+                        dob: "${dobValue}"
+                    }, first: 1) {
                         studentName
                         tcNumber
                         admissionNumber
                         studentClass
                         dob
-                        verificationStatus
                         driveLink
                     }
                 }
@@ -46,13 +42,12 @@ export async function verifyTransferCertificate(formData: FormData) {
         } else if (searchBy === "admissionNumber") {
             query = gql`
                 query MyQuery {
-                    transferCertificates(where: { admissionNumber: "${searchValue}" }) {
+                    transferCertificates2(where: { admissionNumber: "${searchValue}" }, first: 1) {
                         studentName
                         tcNumber
                         admissionNumber
                         studentClass
                         dob
-                        verificationStatus
                         driveLink
                     }
                 }
@@ -61,11 +56,11 @@ export async function verifyTransferCertificate(formData: FormData) {
             throw new Error("Invalid search criteria");
         }
 
-        const response = (await server_query_function(query)) as { transferCertificates: any[] };
+        const response = (await server_query_function(query)) as { transferCertificates2: any[] };
         
-        if (response.transferCertificates && response.transferCertificates.length > 0) {
+        if (response.transferCertificates2 && response.transferCertificates2.length > 0) {
             return {
-                data: response.transferCertificates[0],
+                data: response.transferCertificates2[0],
                 error: null
             };
         } else {
